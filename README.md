@@ -1,14 +1,14 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/KnqVbps7)
+## About
 
-<h1>Ido Azulay</h1>
-<p>Email: Idoaz@edu.hac.ac.il</p>
+**My Ad Board** is a Node.js and Express project that serves as a platform for posting ads. This project uses Sequelize as its ORM (Object-Relational Mapping) tool for interacting with the SQLite database. It includes two built-in admin users: anyone can post ads, but admins need to approve them before they are displayed..
 
-<h1>Execution</h1>
-<p>
-The submission is a WebStorm project that can be run directly from the IDE.
-</p>
-<p>This is a Node.js and Express project that utilizes Sequelize as its ORM for interacting with the database.</p>
+A practical example of using modern web technologies to build a full-stack application, including:
 
+- **Node.js** for server-side JavaScript.
+- **Express** for handling HTTP requests and routing.
+- **Sequelize** for ORM-based database interactions.
+- **SQLite** as the database engine.
+- 
 <h1>Assumptions</h1>
 <p>
   The site use bootstap CDN therefore assumes an internet connection is available.
