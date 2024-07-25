@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title><%= title %></title>
+</head>
+<body>
+<div class="container-fluid">
+    <!--First row - Header -->
+    <div class="row d-none d-sm-flex">
+        <div class="col bg-info">
+            <h1 class="display-3 text-center text-light"><%= title %></h1>
+            <p class="text-center text-light">Please enter your ad details:</p>
+
+        </div>
+    </div>
+</div>
+
+<br><br>
+<div class="container border bg-info-subtle">
+    <div class="row form-group mb-3" >
+        <div class="col-md-6 ">
+
+            <form action="/postAd" method="post" id="form1">
+
+                <div class="field">
+                    <label for="title">Title:</label>
+                    <div class="control">
+                        <input class="form-control" type="text" name="title" id="title">
+                        <div id="titleError" class="error-message"></div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="description">Description:</label>
+                    <div class="control">
+                        <textarea class="form-control" name="description" id="description"></textarea>
+                        <div id="descriptionError" class="error-message"></div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="price">Price:</label>
+                    <div class="control">
+                        <input class="form-control" type="text" name="price" id="price">
+                        <div id="priceError" class="error-message"></div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="phone">Phone:</label>
+                    <div class="control">
+                        <input class="form-control" type="text" name="phone" id="phone">
+                        <div id="phoneError" class="error-message"></div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <div class="control">
+                        <input class="form-control" type="text" name="email" id="email">
+                        <div id="emailError" class="error-message"></div>
+                    </div>
+                </div>
+
+                <div class="field mt-3">
+                    <div class="control">
+                        <button class="btn btn-lg btn-primary mb-1" type="submit" id="postAd">Save to database</button>
+                    </div>
+                </div>
+            </form>
+
+            <br>
+
+            <a class="border p-1 rounded text-bg-light " href="http://localhost:3000">Home</a>
+
+
+        </div>
+    </div>
+</div>
+<br><br>
+<script src="javascripts/funcs.js"> </script>
+
+<script>
+    document.getElementById('postAd').addEventListener('click', Funcs.validateAd);
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
+
